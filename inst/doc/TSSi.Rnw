@@ -1,4 +1,4 @@
-%% LyX 2.0.0 created this file.  For more info, see http://www.lyx.org/.
+%% LyX 2.0.1 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
 \documentclass[a4paper,english]{scrartcl}
 \usepackage[T1]{fontenc}
@@ -19,7 +19,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
 <<echo=F>>=
-  if(exists("ls.enc")) options(encoding=ls.enc)
+  if(exists(".orig.enc")) options(encoding = .orig.enc)
 @
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
@@ -251,11 +251,11 @@ tssRd <- tssAsRangedData(z)
 tssRd
 @
 <<export_rtracklayer>>=
-library(rtracklayer)
-tmpFile <- tempfile()
-export.gff3(readsRd, paste(tmpFile, "gff", sep="."))
-export.bed(segmentsRd, paste(tmpFile, "bed", sep="."))
-export.bed(tssRd, paste(tmpFile, "bed", sep="."))
+#library(rtracklayer)
+#tmpFile <- tempfile()
+#export.gff3(readsRd, paste(tmpFile, "gff", sep="."))
+#export.bed(segmentsRd, paste(tmpFile, "bed", sep="."))
+#export.bed(tssRd, paste(tmpFile, "bed", sep="."))
 @
 
 \newpage{}

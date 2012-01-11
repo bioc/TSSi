@@ -797,23 +797,23 @@ tssRd
 \end_layout
 
 \begin_layout Chunk
-library(rtracklayer)
+#library(rtracklayer)
 \end_layout
 
 \begin_layout Chunk
-tmpFile <- tempfile()
+#tmpFile <- tempfile()
 \end_layout
 
 \begin_layout Chunk
-export.gff3(readsRd, paste(tmpFile, "gff", sep="."))
+#export.gff3(readsRd, paste(tmpFile, "gff", sep="."))
 \end_layout
 
 \begin_layout Chunk
-export.bed(segmentsRd, paste(tmpFile, "bed", sep="."))
+#export.bed(segmentsRd, paste(tmpFile, "bed", sep="."))
 \end_layout
 
 \begin_layout Chunk
-export.bed(tssRd, paste(tmpFile, "bed", sep="."))
+#export.bed(tssRd, paste(tmpFile, "bed", sep="."))
 \end_layout
 
 \begin_layout Chunk
