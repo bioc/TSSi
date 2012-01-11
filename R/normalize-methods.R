@@ -1,7 +1,7 @@
 ## normalizeCounts ##
 setGeneric("normalizeCounts",
            function(x, fun=mean, offset=10L, basal=1e-4,
-                    lambda=c(1, 1), fit=FALSE, multicore=TRUE,
+                    lambda=c(0.1, 0.1), fit=FALSE, multicore=TRUE,
                     optimizer="all", ...)
            standardGeneric("normalizeCounts")
            )
@@ -9,7 +9,7 @@ setGeneric("normalizeCounts",
 setMethod("normalizeCounts",
           signature(x="TssData"),
           function(x, fun=mean, offset=10L, basal=1e-4,
-                   lambda=c(1, 1), fit=FALSE, multicore=TRUE,
+                   lambda=c(0.1, 0.1), fit=FALSE, multicore=TRUE,
                    optimizer="all", ...) {
 
   ## expand lambda if needed
@@ -47,21 +47,3 @@ setMethod("normalizeCounts",
   return(res)
 }
 )
-
-
-setGeneric("normalize",
-           function(x, fun=mean, offset=10L, basal=1e-4,
-                    lambda=c(1, 1), fit=FALSE, multicore=TRUE,
-                    optimizer="all", ...)
-           standardGeneric("normalize")
-           )
-
-setMethod("normalize",
-          signature(x="TssData"),
-          function(x, fun=mean, offset=10L, basal=1e-4,
-                   lambda=c(1, 1), fit=FALSE, multicore=TRUE,
-                   optimizer="all", ...) {
-
-  normalizeCounts(x, fun, offset, basal, lambda, fit, multicore, optimizer, ...)
-
-})

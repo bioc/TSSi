@@ -7,10 +7,6 @@
 \alias{normalizeCounts,TssData-method}
 \alias{normalizeCounts-methods}
 
-\alias{normalize}
-\alias{normalize-TSSi}
-\alias{normalize,TssData-method}
-
 \alias{assessPoisson}
 \alias{assessGradPoisson}
 

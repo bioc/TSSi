@@ -7,10 +7,6 @@
 \alias{identifyStartSites,TssData-method}
 \alias{idenfify-methods}
 
-\alias{identify}
-\alias{identify-TSSi}
-\alias{identify,TssNorm-method}
-
 \title{
   Identify methods
 }

@@ -53,19 +53,3 @@ setMethod("identifyStartSites",
   return(res)
 }
 )
-
-
-setGeneric("identify",
-           function(x, threshold=1, exppara=c(20, 20), neighbor=TRUE,
-                    fun=subtractExpectation, multicore=TRUE, ...)
-           standardGeneric("identify")
-           )
-
-setMethod("identify",
-          signature(x="TssNorm"),
-          function(x, threshold=1, exppara=c(20, 20), neighbor=TRUE,
-                   fun=subtractExpectation, multicore=TRUE,  ...) {
-
-  identifyStartSites(x, threshold, exppara, neighbor, fun, multicore, ...)
-
-})

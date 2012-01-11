@@ -14,10 +14,6 @@ exportClasses(TssData)
 exportClasses(TssNorm)
 exportClasses(TssResult)
 
-exportMethods(segmentizeCounts)
-exportMethods(normalizeCounts)
-exportMethods(identifyStartSites)
-
 exportMethods(segmentize)
 exportMethods(normalize)
 exportMethods(identify)
