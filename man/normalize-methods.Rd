@@ -19,7 +19,7 @@
 }
 
 \usage{
-normalizeCounts(x, fun=mean, offset=10L, basal=1e-4, lambda=c(1, 1),
+normalizeCounts(x, fun=mean, offset=10L, basal=1e-4, lambda=c(0.1, 0.1),
 fit=FALSE, multicore=TRUE, optimizer="all", ...)
 }
 
