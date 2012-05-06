@@ -77,7 +77,7 @@ fun=subtractExpectation, multicore=TRUE, ...)
   be used. For this, the \pkg{multicore} package has to be loaded
   manually before starting the computation, additional parameters are
   passed via the \code{...} argument, e.g.as \code{normalizeCounts(x,
-    mc.ncores=2)}. The \code{multicore} argument can further be used to
+    mc.cores=2)}. The \code{multicore} argument can further be used to
   temporarily disable the parallel estimation by setting it to
   \code{FALSE}. Pleas note that the identification step is normally very
   fast and thus using parallel computation here may a minor impact
