@@ -136,7 +136,7 @@ yFit
 \dontrun{
 ## multicore computation
 library(multicore)
-yFit <- normalizeCounts(x, fit=TRUE, mc.ncores=2)
+yFit <- normalizeCounts(x, fit=TRUE, mc.cores=2)
 }
 }
 
