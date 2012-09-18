@@ -2,6 +2,7 @@ useDynLib(TSSi)
 
 import(methods)
 
+importFrom(BiocGenerics, annotation, "annotation<-")
 importFrom(graphics, plot, points, lines, rug, abline)
 importFrom(Hmisc, approxExtrap)
 importFrom(minqa, bobyqa)

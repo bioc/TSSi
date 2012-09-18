@@ -1,12 +1,12 @@
 Package: TSSi
 Type: Package
 Title: Transcription Start Site Identification
-Version: 1.3.2
+Version: 1.3.3
 Date: 2012-05-06
 Author: Clemens Kreutz, Julian Gehring
 Maintainer: Julian Gehring <julian.gehring@embl.de>
-Imports: methods, Hmisc, minqa, stats, Biobase, plyr, IRanges
-Depends: R (>= 2.13.2)
+Depends: R (>= 2.13.2), BiocGenerics (>= 0.3.2)
+Imports: BiocGenerics, methods, Hmisc, minqa, stats, Biobase (>= 0.3.2), plyr, IRanges
 Suggests: rtracklayer
 Enhances: multicore
 Description: Identify and normalize transcription start sites in high-throughput sequencing data.
