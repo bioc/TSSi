@@ -24,7 +24,7 @@ setMethod("identifyStartSites",
   ## extract normalized data, apply for each segment
   y <-
     if(.useMulticore(multicore))
-      multicore::mclapply(reads, .identifyCore,
+      parallel::mclapply(reads, .identifyCore,
                           basal=basal, tau=tau, threshold=threshold,
                           fun=fun, readCol=readCol, neighbor=neighbor,
                           grep=.grepStrand(x), ...)

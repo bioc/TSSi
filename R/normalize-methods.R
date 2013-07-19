@@ -29,7 +29,7 @@ setMethod("normalizeCounts",
   ## normalize each segment individually
   normData <-
     if(.useMulticore(multicore))
-      multicore::mclapply(X=reads, FUN=.normalize,
+      parallel::mclapply(X=reads, FUN=.normalize,
                           fun=fun, offset=offset, basal=basal, initial=initial,
                           lambda=lambda, fit=fit, optimizer=optimizer, ...)
     else

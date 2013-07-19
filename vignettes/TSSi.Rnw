@@ -164,7 +164,7 @@ between adjacent count estimates.
 
 The computation can be performed with a approximation based on the
 frequency of all reads or fitted explicitly for each segment. On platforms
-supporting the \Rpackage{multicore} package, the fitting can be spread
+supporting the \Rpackage{parallel} package, the fitting can be spread
 over multiple processor cores in order to decrease computation time.
 
 <<normalize_ratio>>=

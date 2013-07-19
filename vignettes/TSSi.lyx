@@ -455,7 +455,7 @@ status open
 
 
 \backslash
-Rpackage{multicore}
+Rpackage{parallel}
 \end_layout
 
 \end_inset
