@@ -27,7 +27,7 @@ setMethod("identifyStartSites",
       parallel::mclapply(reads, .identifyCore,
                           basal=basal, tau=tau, threshold=threshold,
                           fun=fun, readCol=readCol, neighbor=neighbor,
-                          grep=.grepStrand(x), ...)
+                          strand=.grepStrand(x), ...)
     else
       lapply(reads, .identifyCore,
              basal=basal, tau=tau, threshold=threshold, fun=fun,
