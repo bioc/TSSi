@@ -1,7 +1,7 @@
 Package: TSSi
 Type: Package
 Title: Transcription Start Site Identification
-Version: 1.9.1
+Version: 1.9.2
 Date: 2013-07-26
 Author: Clemens Kreutz, Julian Gehring
 Maintainer: Julian Gehring <julian.gehring@embl.de>
@@ -15,4 +15,4 @@ Description: Identify and normalize transcription start sites in
 License: GPL-3
 LazyLoad: yes
 URL: http://julian-gehring.github.com/TSSi/
-biocViews: Sequencing, Sequencing, RNASeq, Genetics, Preprocessing
+biocViews: Sequencing, RNASeq, Genetics, Preprocessing
