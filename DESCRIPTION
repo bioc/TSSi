@@ -6,7 +6,7 @@ Date: 2013-07-26
 Author: Clemens Kreutz, Julian Gehring
 Maintainer: Julian Gehring <julian.gehring@embl.de>
 Depends: R (>= 2.13.2), BiocGenerics (>= 0.3.2)
-Imports: methods, S4Vectors, Hmisc, minqa, stats, Biobase (>=
+Imports: methods, BiocGenerics, S4Vectors, Hmisc, minqa, stats, Biobase (>=
         0.3.2), plyr, IRanges
 Suggests: rtracklayer
 Enhances: parallel
