@@ -3,7 +3,7 @@ Type: Package
 Title: Transcription Start Site Identification
 Version: 1.17.0
 Author: Julian Gehring, Clemens Kreutz
-Maintainer: Julian Gehring <julian.gehring@embl.de>
+Maintainer: Julian Gehring <jg-bioc@gmx.com>
 Depends: R (>= 2.13.2)
 Imports: methods, BiocGenerics (>= 0.3.2), S4Vectors, Hmisc, minqa, stats, Biobase (>= 0.3.2), plyr, IRanges
 Suggests: rtracklayer
