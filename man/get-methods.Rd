@@ -43,6 +43,9 @@
 \alias{[,TssData-method}
 \alias{[,TssNorm-method}
 \alias{[,TssResult-method}
+\alias{[,TssData,ANY,ANY,ANY-method}
+\alias{[,TssNorm,ANY,ANY,ANY-method}
+\alias{[,TssResult,ANY,ANY,ANY-method}
 
 \title{
   Get methods
